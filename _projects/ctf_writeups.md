@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: default
 title: "ctf writeups"
 description: "devops, android and web uygulama güvenliği ile ilgilictf notlarım "
 project_url: ""
