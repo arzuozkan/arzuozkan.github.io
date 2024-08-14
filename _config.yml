@@ -27,3 +27,4 @@ plugins:
 collections:
   projects:
     output: true
+    permalink: /_projects/ctf_writeups.md
