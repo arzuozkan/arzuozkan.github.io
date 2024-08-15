@@ -19,7 +19,7 @@
      -%}
     {%-endif-%}
 
-    %-if item.project_list-%}
+    {%-if item.project_list-%}
       {%
         include post_list.html
           limit=item.project_list.limit
