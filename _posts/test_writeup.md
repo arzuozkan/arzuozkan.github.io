@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Remote Markdown Example"
 ---
 
