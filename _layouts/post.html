@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.min.js"></script>
+---
+layout: default
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.min.js"></script>
 
-</head>
-<body>
+
+<article>
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+  </p>
+
+  <h1>{{ page.title }}</h1>
 
   <div id="toc"></div>
 
-  <header>
-    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    <p>{{ site.description }}</p>
-  </header>
-
-  <article>
-    <h2>{{ page.title }}</h2>
-    <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
-    
-    <div class="post-content">
-      {{ content }}
-    </div>
-
-    {% if page.tags %}
-    <p>Tags: 
-      {% for tag in page.tags %}
-        <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-    </p>
-    {% endif %}
-
-    <p><a href="{{ site.baseurl }}/">Back to Home</a></p>
-  </article>
-
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
+  {{ content }}
+</article>
 
 <script>
   tocbot.init({
@@ -57,5 +33,3 @@
   });
 </script>
 
-</body>
-</html>
