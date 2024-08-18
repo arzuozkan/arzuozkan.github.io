@@ -2,35 +2,25 @@
 layout: default
 ---
 
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.4/tocbot.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.4/tocbot.css">
-</head>
-<body>
+<article>
+  <div id="toc"></div> <!-- TOC için yer ayırdık -->
+
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+  </p>
   
-  <div id="toc"></div>
- 
+  <h1>{{ page.title }}</h1>
+
   {{ content }}
-  
-  <script>
-    tocbot.init({
-      // Where to render the table of contents.
-      tocSelector: '#toc',
-      // Where to grab the headings to build the table of contents.
-      contentSelector: 'body',
-      // Which headings to grab inside of the contentSelector element.
-      headingSelector: 'h1, h2, h3',
-      // How many heading levels should not be included in the table of contents.
-      // Set to 0 to include all levels, or 1+ to exclude those levels.
-      ignoreSelector: '.no-toc',
-      // Smooth scrolling enabled by default.
-      smoothScroll: true,
-    });
-  </script>
-</body>
+</article>
 
-
-
-
-
-
+<!-- TOC'yi başlatmak için gerekli JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.min.js"></script>
+<script>
+  tocbot.init({
+    tocSelector: '#toc', // TOC'nin yerleştirileceği alan
+    contentSelector: 'article', // Başlıkların bulunduğu alan
+    headingSelector: 'h1, h2, h3', // Hangi başlıkların TOC'ye dahil edileceği
+    smoothScroll: true, // Yumuşak kaydırma
+  });
+</script>
