@@ -25,3 +25,20 @@ layout: default
     smoothScroll: true, // Yumuşak kaydırma
   });
 </script>
+
+<style>
+  /* TOC numaralandırmayı gizler */
+  #toc {
+    list-style: none; /* Liste işaretlerini kaldırır */
+    padding-left: 0; /* Sol boşluğu kaldırır */
+  }
+
+  #toc a {
+    text-decoration: none; /* Bağlantı alt çizgilerini kaldırır */
+  }
+
+  /* Başlık numaralarını gizler */
+  #toc li {
+    counter-increment: none; /* Sayacı sıfırlar */
+  }
+</style>
