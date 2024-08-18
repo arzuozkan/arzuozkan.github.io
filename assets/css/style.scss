@@ -2,3 +2,18 @@
 ---
 
 @import "{{ site.theme }}";
+
+/* TOC numaralandırmayı gizler */
+.tocbot__list {
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding-left: 0; /* Sol boşluğu kaldırır */
+}
+
+.tocbot__list a {
+  text-decoration: none; /* Bağlantı alt çizgilerini kaldırır */
+}
+
+/* Numara veya sıralama olan başlıkları gizler */
+.tocbot__list li {
+  counter-increment: none; /* Sayacı sıfırlar */
+}
