@@ -1,4 +1,4 @@
-title: myBlog
+title: My Blog
 url: https://arzuozkan.github.io/
 baseurl: "/" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
@@ -7,13 +7,13 @@ description: > # description of the site (multiple lines allowed)
 
 
 #favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
-# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
+#goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
 
 remote_theme: "riggraz/no-style-please"
 #theme: "no-style-please"
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
-  back_home_text: ".." # customize text for homepage link in post layout
+  back_home_text: "../" # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description in home page
 
@@ -25,7 +25,7 @@ plugins:
   - jekyll-seo-tag
 
 
-collections:
-  projects:
-    output: true
-    permalink: /_projects/ctf_writeups.md
+#collections:
+# projects:
+#    output: true
+#    permalink: /_projects/ctf_writeups.md
