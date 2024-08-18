@@ -9,4 +9,5 @@ title: "Remote Markdown Example"
 
 I hope you like it!
 
-https://raw.githubusercontent.com/arzuozkan/writeup_ctf_notes/master/devops-hacking/frankandherbytryagain.md
+{% include writeup_ctf_notes/devops-hacking/frankandherby.md %}
+
