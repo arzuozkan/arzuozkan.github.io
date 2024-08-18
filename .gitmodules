@@ -1,0 +1,3 @@
+[submodule "writeup_ctf_notes"]
+	path = writeup_ctf_notes
+	url = https://github.com/arzuozkan/writeup_ctf_notes
