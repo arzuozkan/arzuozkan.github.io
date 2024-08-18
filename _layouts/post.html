@@ -36,8 +36,11 @@ layout: default
   #toc a {
     text-decoration: none; /* Bağlantı alt çizgilerini kaldırır */
   }
-
-  /* Başlık numaralarını gizler */
+  #toc ol {
+    list-style-type: none; /* Numara işaretlerini kaldırır */
+    padding-left: 0; /* Sol boşluğu kaldırır */
+  }
+  
   #toc li {
     counter-increment: none; /* Sayacı sıfırlar */
   }
