@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.min.js"></script>
+
+</head>
+<body>
+
+  <div id="toc"></div>
+
+  <header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <article>
+    <h2>{{ page.title }}</h2>
+    <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
+    
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% if page.tags %}
+    <p>Tags: 
+      {% for tag in page.tags %}
+        <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+    </p>
+    {% endif %}
+
+    <p><a href="{{ site.baseurl }}/">Back to Home</a></p>
+  </article>
+
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+
+<script>
+  tocbot.init({
+    // Where to render the table of contents.
+    tocSelector: '#toc',
+    // Where to grab the headings to build the table of contents.
+    contentSelector: 'body',
+    // Which headings to grab inside of the contentSelector element.
+    headingSelector: 'h1, h2, h3',
+    // How many heading levels should not be included in the table of contents.
+    // Set to 0 to include all levels, or 1+ to exclude those levels.
+    ignoreSelector: '.no-toc',
+    // Smooth scrolling enabled by default.
+    smoothScroll: true,
+  });
+</script>
+
+</body>
+</html>
