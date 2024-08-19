@@ -17,6 +17,9 @@ layout: default
   {{ content }}
 </article>
 
+<a href="#" id="scroll-to-top" title="Yukarı Çık">↑</a>
+
+
 <!-- TOC'yi başlatmak için gerekli JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.20.0/tocbot.min.js"></script>
 <script>
@@ -25,6 +28,23 @@ layout: default
     contentSelector: 'article', // Başlıkların bulunduğu alan
     headingSelector: 'h1, h2, h3', // Hangi başlıkların TOC'ye dahil edileceği
     smoothScroll: true, // Yumuşak kaydırma
+  });
+</script>
+<script>
+  // Sayfa kaydırıldığında butonu göster
+  window.onscroll = function() {
+    var scrollToTopButton = document.getElementById("scroll-to-top");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  };
+
+  // Butona tıklanıldığında sayfanın en üstüne kaydır
+  document.getElementById('scroll-to-top').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
   });
 </script>
 
@@ -45,4 +65,22 @@ layout: default
   #toc li {
     counter-increment: none; /* Sayacı sıfırlar */
   }
+  #scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  font-size: 24px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#scroll-to-top:hover {
+  background-color: #0056b3;
+}
 </style>
