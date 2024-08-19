@@ -34,7 +34,7 @@ layout: default
   // Sayfa kaydırıldığında butonu göster
   window.onscroll = function() {
     var scrollToTopButton = document.getElementById("scroll-to-top");
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       scrollToTopButton.style.display = "block";
     } else {
       scrollToTopButton.style.display = "none";
@@ -47,6 +47,7 @@ layout: default
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
 </script>
+
 
 <style>
   /* TOC numaralandırmayı gizler */
@@ -65,22 +66,26 @@ layout: default
   #toc li {
     counter-increment: none; /* Sayacı sıfırlar */
   }
-  #scroll-to-top {
+ #scroll-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none;
+  display: none; /* İlk başta gizli */
   font-size: 24px;
   background-color: #007bff;
   color: white;
-  padding: 10px;
-  border-radius: 50%;
+  width: 50px;  /* Buton genişliği */
+  height: 50px; /* Buton yüksekliği */
+  line-height: 50px; /* Dikey hizalama */
+  border-radius: 50%; /* Tam yuvarlak */
   text-align: center;
   text-decoration: none;
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Butona gölge ekleyerek daha belirgin hale getirin */
 }
 
 #scroll-to-top:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Hover sırasında butonun rengi değişsin */
 }
+
 </style>
