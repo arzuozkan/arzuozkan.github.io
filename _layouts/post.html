@@ -32,22 +32,21 @@ layout: default
   });
 </script>
 <script>
-  // Sayfa kaydırıldığında butonu göster
   window.onscroll = function() {
     var scrollToTopButton = document.getElementById("scroll-to-top");
-    if (window.pageYOffset > 50) { // Sayfa 50 piksel veya daha fazla kaydırıldığında
-      scrollToTopButton.style.display = "block";
+    if (document.documentElement.scrollTop > 50) { // Sayfa 50 piksel veya daha fazla kaydırıldığında
+        scrollToTopButton.style.display = "block";
     } else {
-      scrollToTopButton.style.display = "none";
+        scrollToTopButton.style.display = "none";
     }
   };
 
-  // Butona tıklanıldığında sayfanın en üstüne kaydır
   document.getElementById('scroll-to-top').addEventListener('click', function(e) {
     e.preventDefault();
     window.scrollTo({top: 0, behavior: 'smooth'});
   });
 </script>
+
 
 <style>
   /* TOC numaralandırmayı gizler */
