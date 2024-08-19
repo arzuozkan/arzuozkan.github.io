@@ -1,15 +1,12 @@
 entries:
   - title: info
     entries:
-      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme.
-      - title: github repo
-        url: 
-      - title: "used by "
+      - title: a (nearly) no-CSS, fast, minimalist Jekyll theme by [riggraz](https://github.com/riggraz/no-style-please).
 
   - title: all posts
     post_list:
       limit: 5
       
-  - title: PRO TIP
+  - title: PRO TIP (will be deleted)
     entries:
       - title: to edit this menu, edit _data/menu.yml file
