@@ -294,4 +294,12 @@ Görsel pasta grafiği için **Visualization** içerisine girdikten sonra görse
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1724575918241/45531e4e-9d3f-4d52-937d-4192a64b7c69.png align="center")
 
-![](Pasted%20image%2020240825112250.png align="left")
+---
+
+# İlgili Kurs ve İçerikler
+
+* Splunk, kurulumu, temel komutları ve log analizi üzerine giriş seviyesinde bir kurs: [https://learn.cyberexam.io/cyber-academy/digital-forensics/learn-splunk](https://learn.cyberexam.io/cyber-academy/digital-forensics/learn-splunk)
+    
+* Splunk etkili arama yaklaşımları : [https://medium.com/@efekanacar/splunkta-etkili-arama-stratejileri-02f48c0c0514](https://medium.com/@efekanacar/splunkta-etkili-arama-stratejileri-02f48c0c0514)
+    
+* Splunk kurulum ve log analizi için kullanımı : [https://blog.siberkulupler.com/data-analiz-canavar%C4%B1-splunk-d7db40802eb1](https://blog.siberkulupler.com/data-analiz-canavar%C4%B1-splunk-d7db40802eb1)
