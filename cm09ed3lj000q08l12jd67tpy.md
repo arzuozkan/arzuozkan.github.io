@@ -6,7 +6,6 @@ datePublished: Sun Aug 25 2024 09:58:51 GMT+0000 (Coordinated Universal Time)
 cuid: cm09ed3lj000q08l12jd67tpy
 slug: splunk-for-security-101
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1724577633907/493893d6-1038-4783-a7a6-2017e2861fe5.png
-tags: security, splunk, loganalysis
 
 ---
 
