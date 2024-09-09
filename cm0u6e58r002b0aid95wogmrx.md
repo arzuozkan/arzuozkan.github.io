@@ -4,7 +4,7 @@ datePublished: Sun Sep 08 2024 22:58:53 GMT+0000 (Coordinated Universal Time)
 cuid: cm0u6e58r002b0aid95wogmrx
 slug: mitre-credential-access-t1003-008
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725826682929/ceba42f1-f1df-448c-9812-105baa2f0b54.png
-tags: blueteam, mitre-attack-technique, cyberexam
+tags: credential-access, cyberexam, mitre-attack
 
 ---
 
