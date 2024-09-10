@@ -8,6 +8,10 @@ tags: cyberexam, mitre-attack, defense-evasion
 
 ---
 
+Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Defense Evasion: T1070.002 labaratuvar çözümünden bahsedeceğim.
+
+Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/defense-evasion/mitre-defense-evasion-t1070-002](https://learn.cyberexam.io/challenges/mitre/defense-evasion/mitre-defense-evasion-t1070-002)
+
 ---
 
 ## Konuya Giriş
