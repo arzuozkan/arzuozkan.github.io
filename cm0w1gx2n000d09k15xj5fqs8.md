@@ -3,7 +3,7 @@ title: "MITRE: Persistence: T1136.001"
 datePublished: Tue Sep 10 2024 06:16:36 GMT+0000 (Coordinated Universal Time)
 cuid: cm0w1gx2n000d09k15xj5fqs8
 slug: mitre-persistence-t1136001
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725946750054/303e8bf6-274f-4aa2-95a5-b035d2f846be.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725949680554/697fce84-953d-42c6-87c2-a89c2a8422ae.png
 tags: persistence, cyberexam, mitre-attack
 
 ---
