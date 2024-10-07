@@ -16,7 +16,7 @@ Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/creden
 
 Tehdit aktörleri, erişimi olan sistemde private key olarak isimlendirilen gizli anahtar bilgilerine, sertifika dosyalarına veya kullanıcı giriş bilgilerini içeren dosyalara erişmeye çalışmaktadır. Gizli kriptografik anahtarlar ve sertifika dosyaları kimlik doğrulama, şifreleme ve dijital imza gibi işlemler için kullanılmaktadır. Yaygın olarak bilinen bazı dosya uzantıları arasında, .key, .pgp, .gpg, .ppk, .pem, .cer, .asc yer almaktadır. Bu dosyaların yanı sıra varsayılan olarak kullanılan örneğin ~/.ssh gibi dizinlerde hedeflenmektedir. Koruma amaçlı hassas verileri içeren anahtar veya sertifika dosyaları parola korumalı olabilir ancak tehdit aktörü bu önlemi atlatmak için kaba-kuvvet saldırısı gibi saldırılar gerçekleştirerek parola korumasını ortadan kaldırabilir.
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 ### victim kullanıcısı ile saldırı makinesine giriş yapalım. Yetkili kullanıcı ile bağlantıyı sağlayan gizli anahtarın dizini nedir?
 
