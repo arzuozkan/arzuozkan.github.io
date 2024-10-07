@@ -16,7 +16,7 @@ Lab bağlantı adresi: [https://learn.cyberexam.io/challenges/blue-team/incident
 
 Oliver kullandığı Windows makinesinde, banka hesabının çalındığını farkediyor. Yetkililer ile görüşüyor ve makinesi izole ediliyor. Görevimiz, saldırının nasıl gerçekleştiğini tespit edip analizini yapmak. Hedef makineye erişim için `sudo xfreerdp /v:ip /u:Oliver /p:'Nk150Parker2024*!' /dynamic-resolution /cert:ignore +clipboard /f` komutunu kullanabiliriz.
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 Hedef sisteme bağlandığımız zaman Oliver’ın kullandığı eposta uygulaması Thunderbird uygulamasını açalım. Gelen epostaları inceleyelim. Silinen epostalar da mevcut oradaki epostalar da incelenebilir.
 
