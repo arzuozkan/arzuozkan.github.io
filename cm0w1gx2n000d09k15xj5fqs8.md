@@ -18,7 +18,7 @@ Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/persis
 
 T1136.001 Create Account: Local Account, tehdit aktörlerinin erişidikleri sistemde kalıcılığı sağlamak için uyguladıkları tekniklerden bir tanesidir. Sistemde yeterli yetkilere sahip olan kullanıcı, yerel kullanıcı hesabı oluşturabilir. Linux işletim sisteminde `useradd` komutu, Windows sistemlerde `net user username /ADD` ve macOS için `dscl -create` komutu kullanılmaktadır. Yerel hesaplar sayesinde sisteme SSH, RDP gibi uzaktan bağlantı gerekmeden erişmeyi sağlar.
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 `ssh -i admin_key admin@detect` komutu ile tespit makinesine giriş yapalım.
 
