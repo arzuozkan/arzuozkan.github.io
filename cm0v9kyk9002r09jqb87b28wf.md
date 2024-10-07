@@ -53,7 +53,7 @@ MITRE ATT&CK Keşif teknikleri, tehdit aktörünün eriştiği sistemle ilgili b
 * T1016: System Network Configuration Discovery
     
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 ### Saldırı makinesine ssh ile bağlanın. kullanıcı id değeri nedir?
 
