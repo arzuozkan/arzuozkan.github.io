@@ -35,7 +35,7 @@ Tehdit aktörleri, sistemde bıraktıkları izleri, zararlı aktiviteleri ortada
 * /var/log/audit/audit.log : sistemde önemli olayların denetim kayıtları
     
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 Sistemde gerçekleşen kullanıcı hareketlerinin kaydını tutan /var/log/audit denetim loglarını inceleyelim
 
