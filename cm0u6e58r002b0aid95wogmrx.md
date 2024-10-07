@@ -18,7 +18,7 @@ Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/creden
 
 Tehdit aktörleri, saldırdığı sistem içerisinde kullanıcıya ait giriş bilgilerine erişebilmektedir. Linux işletim sisteminde bu gibi hassas bilgileri içeren dosyalar arasında `/etc/shadow` ve `/etc/passwd` dosyaları yer almaktadır. Sistemde olan kullanıcılar `/etc/passwd` içerisinde listelenirken, bu kullanıcılara ait parolanın hash bilgisi `/etc/shadow` dosyası içerisinde tutulmaktadır ve varsayılan olarak sadece root tarafından okunabilir durumdadır. `unshadow /etc/passwd /etc/shadow > pass_crack.db` komutu ile shadow içerisindeki parola hashleri çözülmektedir.
 
-## Labaratuvar Çözümü
+## Laboratuvar Çözümü
 
 Kurban makine bilgileri victim:password olarak verilmiştir. `ssh -i victim_key victim@attack` komutu ile ssh bağlantısı yapılabilir. Start Lab butonu ile lab ortamını başlatalım.
 
