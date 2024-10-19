@@ -8,7 +8,7 @@ tags: persistence, cyberexam, mitre-attack
 
 ---
 
-Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Persistence: T1136.001 labaratuvar çözümünden bahsedeceğim.
+Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Persistence: T1136.001 lab çözümünden bahsedeceğim.
 
 Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/persistence/mitre-persistence-t1136-001](https://learn.cyberexam.io/challenges/mitre/persistence/mitre-persistence-t1136-001)
 
