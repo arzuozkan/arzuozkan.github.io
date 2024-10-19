@@ -1,5 +1,5 @@
 ---
-title: "MITRE: Credential Access: T1003-008"
+title: "MITRE: Credential Access: T1003.008"
 datePublished: Sun Sep 08 2024 22:58:53 GMT+0000 (Coordinated Universal Time)
 cuid: cm0u6e58r002b0aid95wogmrx
 slug: mitre-credential-access-t1003-008
@@ -8,7 +8,7 @@ tags: credential-access, cyberexam, mitre-attack
 
 ---
 
-Cyberexam platformunda yer alan [MITRE | ATT&CK öğrenme yolu](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Credential Access: T1003-008 labaratuvar çözümünden bahsedeceğim.
+Cyberexam platformunda yer alan [MITRE | ATT&CK öğrenme yolu](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Credential Access: T1003-008 lab çözümünden bahsedeceğim.
 
 Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/credential-access/mitre-credential-access-t1003-008](https://learn.cyberexam.io/challenges/mitre/credential-access/mitre-credential-access-t1003-008)
 
