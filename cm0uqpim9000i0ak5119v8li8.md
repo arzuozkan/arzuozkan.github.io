@@ -8,7 +8,7 @@ tags: credential-access, cyberexam, mitre-attack
 
 ---
 
-Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Credential Access: T1552.004 labaratuvar çözümünden bahsedeceğim.
+Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Credential Access: T1552.004 laboratuvar çözümünden bahsedeceğim.
 
 Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/credential-access/mitre-credential-access-t1552-004](https://learn.cyberexam.io/challenges/mitre/credential-access/mitre-credential-access-t1552-004)
 
