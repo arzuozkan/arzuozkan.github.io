@@ -8,7 +8,7 @@ tags: cyberexam, mitre-attack, discovery-techniques
 
 ---
 
-Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Discovery Techniques labaratuvar çözümünden bahsedeceğim.
+Cyberexam platformunda yer alan [**MITRE | ATT&CK öğrenme yolu**](https://learn.cyberexam.io/learning-modules/mitre-att-ck)na ait, MITRE: Discovery Techniques lab çözümünden bahsedeceğim.
 
 Not: Lab bağlantı adresi - [https://learn.cyberexam.io/challenges/mitre/discovery/mitre-discovery-techniques](https://learn.cyberexam.io/challenges/mitre/discovery/mitre-discovery-techniques)
 
