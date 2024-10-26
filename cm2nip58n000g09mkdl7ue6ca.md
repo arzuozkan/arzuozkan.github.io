@@ -3,7 +3,7 @@ title: "AWS ile Wordpress ve MySQL Kullanımı"
 datePublished: Sat Oct 12 2024 21:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cm2nip58n000g09mkdl7ue6ca
 slug: aws-ile-wordpress-ve-mysql-kullanimi
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729787165070/21222a37-9b17-4bbb-a514-f8deb295c79e.jpeg
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729982136463/33286341-dc4b-411d-9905-5e4acbb2dcbf.png
 tags: aws, wordpress, devops
 
 ---
