@@ -3,7 +3,7 @@ title: "MITRE: Execution: T1059.004"
 datePublished: Sat Oct 26 2024 22:12:43 GMT+0000 (Coordinated Universal Time)
 cuid: cm2qpvo2q000109lb533w0dur
 slug: mitre-execution-t1059004
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729446590492/a0f4d29f-fd97-4d52-942c-9167b6a9d229.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729981015646/7557d837-cac0-4d91-b04c-f0b63ad6591c.png
 tags: execution, cyberexam, mitre-attack
 
 ---
