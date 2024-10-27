@@ -3,7 +3,7 @@ title: "MITRE: Credential Access: T1003.008"
 datePublished: Sun Sep 08 2024 22:58:53 GMT+0000 (Coordinated Universal Time)
 cuid: cm0u6e58r002b0aid95wogmrx
 slug: mitre-credential-access-t1003-008
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725826682929/ceba42f1-f1df-448c-9812-105baa2f0b54.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730009079454/7e433cec-2aaa-457c-a786-7c71c90f4477.png
 tags: credential-access, cyberexam, mitre-attack
 
 ---
