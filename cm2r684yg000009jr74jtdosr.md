@@ -3,7 +3,7 @@ title: "MITRE: Discovery: T1040"
 datePublished: Sun Oct 27 2024 05:50:18 GMT+0000 (Coordinated Universal Time)
 cuid: cm2r684yg000009jr74jtdosr
 slug: mitre-discovery-t1040
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730008245504/6078c2b7-615d-4a34-b2aa-ecee6022c444.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730008680780/102cee8a-7ed0-41b2-91b2-8ed4b3ddeaf6.png
 tags: network, discovery, cyberexam, mitre-attack, sniffing
 
 ---
