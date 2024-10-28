@@ -3,7 +3,7 @@ title: "WordPress TakeOver Investigation"
 datePublished: Mon Oct 28 2024 14:24:22 GMT+0000 (Coordinated Universal Time)
 cuid: cm2t412lu00000amngtzf79qg
 slug: wordpress-takeover-investigation
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730126008869/1fca2e88-64af-4b7f-b3f0-923ec3e3954c.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730126120792/773f87b9-c497-41d6-a8f9-680d663412a2.png
 tags: wordpress-plugins, wordpress, log-analysis, incident-response, cyberexam
 
 ---
