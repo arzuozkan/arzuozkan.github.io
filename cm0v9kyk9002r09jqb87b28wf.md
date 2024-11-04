@@ -59,7 +59,7 @@ MITRE ATT&CK Keşif teknikleri, tehdit aktörünün eriştiği sistemle ilgili b
 
 `id` komutunu kullanarak sistemdeki kullanıcıya ait kullanıcı idsi, kullanıcı adı, grup adı gibi bilgilere erişilmektedir. uid bilgisi, kullanıcının yetkilerini ve erişim kaynaklarını gösterebilir. En yetkili root kullanıcının uid değeri 0' dır.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725885524478/fe5b8cb7-9f48-4560-bcdd-13e341645bef.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703355373/58d0503a-1865-4509-8139-8c542dd588c4.png align="center")
 
 Saldırganın bu keşif tekniği T1033: System Owner/User Discovery ve T1069: Permission Groups Discovery: Local Groups ile ilikilendirilebilir. Tehdit aktörü, eriştiği sistemdeki bulunan kullanıcıyı, yetkilerini öğrenmek ister. Buna göre saldırı senaryosu gelişmektedir.
 
@@ -67,7 +67,7 @@ Saldırganın bu keşif tekniği T1033: System Owner/User Discovery ve T1069: Pe
 
 Bir önceki soruda kullanılan `id` komutu ile victim kullanıcısının grubu öğrenilebilir. Başka bir yöntemde ise groups victim komutu ile victim kullanıcısının hangi gruplara bağlı olduğu görülebilir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725887815223/6b5ccf27-7842-4851-ac0d-9ca614759993.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703388189/c687b30a-8de2-4f3c-bf77-76a75bdcf739.png align="center")
 
 T1069: Permission Groups Discovery: Local Groups tekniği içerisinde yer alır.
 
@@ -75,7 +75,7 @@ T1069: Permission Groups Discovery: Local Groups tekniği içerisinde yer alır.
 
 Tehdit aktörünün sistem dili keşfindeki amaç, hedefin konumu, bölgesi ve kullanılan dil hakkında bilgi toplayarak saldırılarını özelleştirmek olabilir. Linux sistemlerde, `locale` komutunu kullanarak veya `echo $LANG` komutu ile sistem dili görüntülenebilir. Windows için `Get-WinSystemLocale` powershell komutu kullanılabilir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725888187906/cf3c1a05-c6f8-4bdc-b008-3c6043958cf2.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703447497/6533e658-f9e1-4646-a991-d61b38e79814.png align="center")
 
 MITRE ATT&CK çerçevesinde ilgili teknik, T1614.001: System Location Discovery: System Language Discovery.
 
@@ -121,13 +121,13 @@ Başka bir kontrol yöntemi çalışan processlere bakmak olacaktır. `ps aux` k
 
 Linux sistemlerde parola politikası /etc/login.defs dosyasında bulunabilir. `cat /etc/login.defs` komutu ile dosyanın içeriğini incelediğimizde giriş deneme sayısını görebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725896400329/3ef48056-143d-481c-9aa9-d0bb9b684b6f.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703526466/00dbaf5f-9894-4478-81c5-104497fcf843.png align="center")
 
 ### Parola geçerliliği süresi bitmeden kaç gün önce uyarmaktadır?
 
 Bir önceki soruda kullanılan login.defs dosyasında bu bilgi yer almaktadır. `PASS_WARN_AGE` değeri parolanın geçerliliği dolmadan uyarı vereceği günü belirtmektedir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725896612472/34e774f8-2671-4cb3-a3b3-eef3d25af696.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703569004/5dc1855b-f19b-4951-849d-4fd394f2cde6.png align="center")
 
 T1201: Password Policy Discovery tekniği ile ilişkilendirilebilir.
 
@@ -135,7 +135,7 @@ T1201: Password Policy Discovery tekniği ile ilişkilendirilebilir.
 
 `ps aux` komutu ile veya daha da özelliştirilmiş olarak kullanılan `ps -p 1` komutu hangi processin çalıştığını göstermektedir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725896948631/4db2aa5e-c000-42e4-8e1a-6ddd6833790d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703609625/e9392d8b-ef45-4ab0-86d2-fd40febca98a.png align="center")
 
 MITRE ATT&CK T1057: Process Discovery tekniğidir.
 
@@ -151,12 +151,12 @@ Ek olarak, linux sistemlerde `/sys/class/net` dizini altında arayüzlere ait di
 
 ### Yerel ağ subnet adresi nedir?
 
-ip a komutu arayüzleri ve adreslerini detaylı olarak göstermektedir. hedef makinenin yerel ağ IP adresi 192.168.1.40. Subnet maskesi /24 ile ifade edilmiş 192.168.1.0
+ip a komutu arayüzleri ve adreslerini detaylı olarak göstermektedir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725897999888/44f4d9ab-c294-4f90-9d45-3793681427b2.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730703674632/fdcd99f0-aab2-4d12-81d0-ab425c3c28b1.png align="center")
 
 ### Dış ağın subnet değeri nedir?
 
 `ip a` komutunu kullanarak veya `ip route show` ile görüntüleyerek dış ağ adresini bulabiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725899295268/901557a1-a9c1-40b1-81a2-d5091590b2d0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1730704302771/b1c99076-33b3-4ff0-b8bd-cff424b42056.png align="center")
