@@ -3,7 +3,7 @@ title: "Browser Forensics: Firefox Bookmark Analysis"
 datePublished: Mon Nov 11 2024 11:43:56 GMT+0000 (Coordinated Universal Time)
 cuid: cm3cygolb001409l25d7o1b7z
 slug: browser-forensics-firefox-bookmark-analysis
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1726305989974/1cb26bcc-7b53-4a23-8fb7-b654b96879f7.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1731326050222/741986bd-9a36-4739-b733-b10d00780d1a.png
 tags: firefox, cyberexam, browser-forensics
 
 ---
