@@ -26,17 +26,15 @@ T1136.001 Create Account: Local Account, tehdit aktörlerinin erişidikleri sist
 
 Linux sistemde kimlik doğrulama gibi güvenlik kayıtlarını `/var/log/secure` veya `/var/log/auth.log` dosyalarında bulunabilir.
 
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733039681576/2dea17b9-9e57-4851-af82-ac1539f512a9.png align="center")
+
 `cat /var/log/auth.log | grep useradd` komutunu çalıştırarak filtreleme yapabiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725948235307/9c7ec95e-68ad-48d1-a186-2c713d6651ec.png align="center")
-
-markus isminde oluşan bu kullanıcı root grubunda ve root dizinine erişimi olacak şekilde ayarlanmıştır. `id markus` komutu ile kullanıcı id, grup id ve grup bilgilerini görebiliriz.
-
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725948853549/8d98cba2-5cbc-46e8-a797-a47c1840e229.png align="center")
+Oluşan bu kullanıcı root grubunda ve root dizinine erişimi olacak şekilde ayarlanmıştır. `id <user>` komutu ile kullanıcı id, grup id ve grup bilgilerini görebiliriz.
 
 ### Tespit edilen oluşturulmuş kullanıcının adı nedir?
 
-Bir önceki soruda cevabı bulunmuştur. Oluşan yerel kullanıcı markus.
+Bir önceki soruda, log içerisinde oluşturulan yeni kullanıcının ismini bulabiliriz.
 
 ### Ne zaman oluşturulmuştur?
 
