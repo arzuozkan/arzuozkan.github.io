@@ -28,21 +28,21 @@ Kurban makine bilgileri victim:password olarak verilmiştir. `ssh -i victim_key 
 
 Kaç tane kullanıcı olduğunu bulmak için /etc/passwd dosyasının içine bakabiliriz. UID değeri 1000 ve üzeri olan kullanıcılar insan kullanıcılardır. Diğer kalanlar, sistem kullancısı olarak bilinir.
 
-`awk -F: '($3 >= 1000) && ($7 !~ /nologin/ && $7 !~ /false/) {print $1}' /etc/passwd` komutunu kullanarak sistem kullanıcılarını eleyip normal kullanıcıları listeleyebiliriz. Böylece çözüme ulaşmış oluruz.
+`awk -F: '($3 >= 1000) && ($7 !~ /nologin/ && $7 !~ /false/) {print $1}' /etc/passwd` komutunu kullanarak sistem kullanıcılarını eleyip normal kullanıcıları listeleyebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725828207252/695583de-6fcd-47fa-8c61-a22c945ac1dd.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733039133249/21d83576-acdc-4057-961d-f481d818bc73.png align="center")
 
 ### Root olmayan kaç kullanıcı vardır?
 
-Root en yetkili kullancıdır. UID değeri 0' dır. Belki burada admin kullanıcısı sudo grubundadır o yüzden onu root olarak sayabilir. Bu yüzden cevabı 2 olarak girdim. `cat /etc/group` veya `getent group` komutu ile grup bilgisi öğrenilebiliyor.
+Root en yetkili kullancıdır. UID değeri 0' dır. Belki burada admin kullanıcısı sudo grubundadır o yüzden onu root olarak sayabilir. `cat /etc/group` veya `getent group` komutu ile grup bilgisi öğrenilebiliyor.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725828609441/d53e6257-6dba-4202-8dfa-f1126c90068b.png align="center")
 
 ### Root olmayan kullanıcıların kullanıcı grubu nedir?
 
-Non-root bir kullanıcı seçelim, örneğin victim. Bu kullanıcının grubunu `groups victim` komutu ile öğrenebiliriz.
+Non-root bir kullanıcı seçelim, örneğin user. Bu kullanıcının grubunu `groups user` komutu ile öğrenebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725828890630/910acd32-6af0-44ee-be1f-579761f08450.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733039196513/e60faa23-f143-4f7e-afda-7cb93c54774e.png align="center")
 
 ### John'un parolası nedir?
 
