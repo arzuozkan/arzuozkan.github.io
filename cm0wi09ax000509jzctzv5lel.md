@@ -43,7 +43,7 @@ Sistemde gerçekleşen kullanıcı hareketlerinin kaydını tutan /var/log/audit
 
 Denetim kayıtlarına erişmek için admin kullanıcısından yetkili root kullanıcısına geçmemiz gerekiyor. Sonrasında `cat /var/log/audit/audit.log | grep “delete\|log”` komutu ile kayıtları filtreleyerek görüntüleyebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1725975431139/36b9b26a-4b28-453b-9a66-5bae6e5a94f0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733039035384/fa4c1c9c-43ec-4fff-a2d5-c211e769bd29.png align="center")
 
 ### Tespit makinesine admin kullanıcısı ile giriş yapın. Logları inceleyin. Logları silen kullanıcının UID’si nedir?
 
