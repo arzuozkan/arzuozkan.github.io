@@ -46,15 +46,15 @@ def remove_null_padding(input_file, output_file) :
 remove_null_padding('binary_file', 'cleaned_file')
 ```
 
-Farklı yaklaşımlarda mevcut tabii, örneğin `truncate` komutu ile dosyayı orjinal boyutuna getirebiliriz veya `dd` (disk dump) komutu ile kopyalama işlemi yapılabilir. Burada bulunması gereken 00 olmayan son byteın indexi. Chatgpt kullanarak oluşturulan bir python scripti ile buldum
+Farklı yaklaşımlarda mevcut tabii, örneğin `truncate` komutu ile dosyayı orjinal boyutuna getirebiliriz veya `dd` (disk dump) komutu ile kopyalama işlemi yapılabilir. Burada bulunması gereken 00 olmayan son byte indexi. Chatgpt kullanarak oluşturulan bir python scripti ile buldum
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733295668317/a40284de-9400-4e32-90e7-d8d046976b30.png align="center")
 
-Sonrasında dd komutu ile orjinal dosyayı oluşturmaya çalıştım. `dd if=null-padded-binary of=original-binary bs=1 count=last_index+1` . Komut içerisinde bs=1 olarak ifade edilen blok boyutunu 1 byte olarak tanımlıyoruz. Varsayılan değeri 512byte.
+Sonrasında dd komutu ile orjinal dosyayı oluşturmaya çalıştım. `dd if=null-padded-binary of=original-binary bs=1 count=last_index+1` . Komut içerisinde bs=1 olarak ifade edilen blok boyutunu 1 byte olarak tanımlıyoruz. Eğer tanımlamazsak, varsayılan değer 512byte olarak alacaktır.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733296094070/5d821080-d17c-4fef-88d2-af15ee719aba.png align="center")
 
-`md5sum original-binary` komutu ile MD5sum hash değerini görüntüleyebiliriz.
+`md5sum original-binary` komutu ile md5 hash değerini görüntüleyebiliriz.
 
 ### Random-padded-binary analiz edin ve orjinal dosyanın hash değeri nedir?
 
