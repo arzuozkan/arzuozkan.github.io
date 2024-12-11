@@ -20,7 +20,7 @@ Oliver kullandığı Windows makinesinde, banka hesabının çalındığını fa
 
 Hedef sisteme bağlandığımız zaman Oliver’ın kullandığı eposta uygulaması Thunderbird uygulamasını açalım. Gelen epostaları inceleyelim. Silinen epostalar da mevcut oradaki epostalar da incelenebilir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727201322125/3a8047cc-8b64-45f8-a445-4d4240b5b49c.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923254125/3f46b0be-433c-4a1c-83ed-2a5d98a64888.png align="center")
 
 Daha detaylı bilgilere erişmek için sağ üst köşede yer alan **More** seçeneğine tıklayalım ve **View Source** kısmına gidelim.
 
@@ -28,7 +28,7 @@ Daha detaylı bilgilere erişmek için sağ üst köşede yer alan **More** seç
 
 Epostanın gönderici, alıcı, hangi uygulama ile gönderilmiş içeriği gibi bilgiler yer almaktadır. Eposta arayüzünde, gönderen ve içerikler yanıltıcı olabilir. Bu yüzden eposta kaynağını incelemek gerekebiliyor.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727202455706/e77e7014-acad-41a8-ba44-3c73ad825a81.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923301770/c08b39d8-e23a-437c-bbd8-7e94a73eb654.png align="center")
 
 Eposta kaynağı içerisinde, gönderilen epostanın kullanıcıya gelene kadar iletildiği sunucular da yer almaktadır. Bunu daha detaylı görebilmek için epostayı .eml dosya formatında kaydedelim. PhishTool gibi analiz araçlarını kullanmak faydalı olacaktır. PhishTool aracı çevrimiçi bir platform olup bir kullanıcı hesabı açmayı gerektiriyor. Bu işlemleri gerçekleştirdikten sonra üst kısımda yer alan **Analysis &gt; Choose file** ile kaydettiğimiz eposta dosyasını yükleyelim.
 
