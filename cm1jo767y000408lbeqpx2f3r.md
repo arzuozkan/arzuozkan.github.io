@@ -38,7 +38,7 @@ Eposta kaynağı içerisinde, gönderilen epostanın kullanıcıya gelene kadar 
 
 Karşımıza görseldeki gibi bir arayüz çıkmaktadır. **Headers** bölümünde epostanın başlık bilgileri yer almaktadır. **From** bilgisinde gönderenin eposta adresi bulunuyor.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727204330881/7a35d31b-6742-4f29-bd45-8c9c4f6da472.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733922707849/65d5b7e2-7664-4761-8f0c-b1d63c902548.png align="center")
 
 Received lines kısmında epostanın kullanıcıya ulaşana kadar iletildiği sunucular yer almaktadır. Toplamda 6 farklı sunucu üzerinden gelerek iletilmiş olduğunu gözlemleyebiliriz.
 
@@ -48,7 +48,7 @@ Received lines kısmında epostanın kullanıcıya ulaşana kadar iletildiği su
 
 Epostada ek olarak gönderilen arşiv dosyasını indirip içeriğini açalım. Ancak makine içerisinde **Downloads** klasöründe bu dosya var. Dosya türünün doğruluğunu test edelim. Dosyaya sağ tıklayıp **Properties** seçeneğinden dosya tipinin aslında pdf değil bir cmd script dosyası olduğunu görüyoruz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727204742387/4917ab7a-3479-440a-a702-3611e557e30e.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733922769732/fc544a3a-ddf6-4d8a-a9ba-e7ddb04965ed.png align="center")
 
 Dosyanın içeriğini notepad veya bir text editörü yardımı ile açtığımız zaman (Sağ tıklayıp Edit seçeneğini işaretleyelim) encode edilmiş bir metin ve powershell komutu görebiliriz.
 
@@ -66,9 +66,9 @@ Uzun bir araştırma sonucunda ilgili zafiyet WinRAR uzaktan kod çalıştırma 
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727267828127/7a98bf3c-2dd4-4156-9dc4-579be1f99ee7.png align="center")
 
-Zafiyet WinRAR’ın 6.22 ve önceki versiyonlarda bulunmaktadır. Windows masaüstünde bulunan WinRAR uygulamasını açıp versiyonunu kontrol edelim **Help &gt; About WinRAR…** seçeneğine tıkladığımız zaman uygulama hakkında bilgilere erişebiliriz.
+Zafiyet WinRAR’ın yüklü olan versiyonunda bulunmaktadır. Windows masaüstünde bulunan WinRAR uygulamasını açıp versiyonunu kontrol edelim **Help &gt; About WinRAR…** seçeneğine tıkladığımız zaman uygulama hakkında bilgilere erişebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727268177502/fa176840-45af-480d-b856-c38afef00f14.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733922871614/faa695bf-e33a-4bcb-8c53-763b09a42238.png align="center")
 
 Arşiv içerisinde de aynı isimde pdf ve klasör bulunmaktadır. Klasör içerisinde de zararlı bat dosyası bulunuyor. Bu zafiyet sayesinde kullanıcı farketmeden pdf dosyası ile birlikte zararlı dosyayı da çalıştırmaktadır. Saldırgan klasör ve dosya isimlerini aynı olacak şekilde, arşiv dosyasını oluştururken düzenlemiş.
 
@@ -90,7 +90,7 @@ Saldırganın IP adresini çözülen Powershell kodu içerisinde tespit etmişti
 
 Kurulan zararlı, **C:\\Users\\Oliver\\Documents** dizini altında yer almaktadır.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727271225379/33ab3168-868e-429d-927e-3d0c983cbb32.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923011919/24cd02e5-2d46-4da7-ab24-9b19106f048b.png align="center")
 
 ### Saldırgan ne zaman log silme işlemini gerçekleştirmiştir?
 
@@ -100,11 +100,11 @@ Event viewer (Olay görüntüleyicisi) aracı ile uygulama, sistem ve güvenlik 
 
 Filtreyi uyguladıktan sonra bir tane event listelendiğini görebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727376494229/4fb67ed9-c8d9-45b7-8c79-c07070576db7.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923099580/c7b6ef82-5423-4946-9e8f-3ecef6094dfb.png align="center")
 
 Diğer bir silme işlemi de güvenlik loglarında gerçekleşmiştir. Bunun içinde 1102 event ID’ye göre filtreleme yaparak erişebiliriz.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727247329276/f2cedc3d-a0cb-4eef-9125-abb4a8154ebf.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923131635/d6cd5d66-1574-4447-b173-8c6c7656107d.png align="center")
 
 ### Saldırganın çaldığı parola bilgisi?
 
@@ -114,7 +114,7 @@ Powershell komut geçmişi görüntülendiğinde saldırganın çalıştırmış
 
 Yukarıdaki komutu kullanarak saldırgan, sistemdeki parola bilgisi içeren xml, txt ve ini dosyalarını araştırmıştır. Aynı komutu çalıştırdığımız zaman, **C:\\Users\\OliverMusic\\Bank.txt** içerisinde parola bilgisine ulaşabiliriz. Bu dosya içerisinde Oliver kullanıcısına ait banka hesabı kimlik bilgileri bulunuyor.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1727213752990/35067484-b4d9-45ca-805a-7b7c44c9f5f0.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1733923175199/eaa0c3c7-77e4-4edd-9bda-33dbf65afe54.png align="center")
 
 ### Saldırının MITRE ATT&CK Teknikleri
 
