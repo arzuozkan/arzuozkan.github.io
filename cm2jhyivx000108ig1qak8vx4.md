@@ -34,13 +34,13 @@ Tespit makineye erişim için `sudo ssh -i admin_key admin@detect` komutunu çal
 
 auth.log dosyası içerisinde düzenlenme tarihi yer almaktadır. Diğer bir yöntem olarak, `stat /path/file` komutu da dosyanın düzenlenme, erişilme ve değiştirilme zamanı ile ilgili bilgileri göstermektedir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729542410244/f785273c-055d-4f60-b505-1a39c28496b1.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734262319994/00f0285e-25bd-409d-9734-f1667035d63a.png align="center")
 
 ### Hangi kullanıcı bu saldırıda düzenleme işlemini gerçekleştirmiştir?
 
-İncelenen log içerisinde victim kullanıcısının sudo yetkilerini kullanarak komut çalıştırdığı görülmektedir.
+İncelenen log içerisinde hangi kullanıcının sudo yetkilerini kullanarak komut çalıştırdığı görülebilir.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1729543526187/ec280700-563b-47ce-84b6-cb801f168a4d.png align="center")
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1734262217256/a7cf71e5-d302-4337-a828-d4ee3ba79ed7.png align="center")
 
 ### Yeni oluşturulan timestamp\_timeout değeri nedir?
 
